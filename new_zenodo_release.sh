@@ -14,10 +14,13 @@ do
 done
 zenodraft file add $RECORD_ID preprocessed_data.zip
 
-# create and update metadata
-cffconvert -f zenodo > .zenodo.json
-cat add_to_zenodojson.txt >> .zenodo.json
-perl -i -pe 'BEGIN{undef $/;} s/\n\}\nADDITIONAL_TEXT/,/smg' .zenodo.json
+# derive zenodo metadata from CITATION.cff using 'cffconvert'
+cffconvert -f zenodo > .zenodo.base.json
+
+# upsert with additional data using 'jq', store the result in .zenodo.json
+cat .zenodo.base.json .zenodo.extras.json | jq -sS add > .zenodo.json
+
+# attach the metadata to the zenodo record
 zenodraft metadata update $RECORD_ID .zenodo.json
 
 # publish the record

@@ -1,3 +1,5 @@
 *.zip
 *.nc
 .DS_Store
+
+.zenodo.json

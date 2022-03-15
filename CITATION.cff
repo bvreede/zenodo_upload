@@ -9,17 +9,17 @@ abstract: >-
     Outputs from the probabilistic projection methods developed or assessed in
     the European Climate Projection system (EUCP) Horizon2020 project. The data
     can be previewed through our <a
-    href="https://eucp-project.github.io/atlas/">interactive atlas</a>.</p>
+    href=https://eucp-project.github.io/atlas/>interactive atlas</a>.</p>
     <p>For more information, see the <a
-    href="https://eucp-project.github.io/atlas/about">atlas about page</a>,
+    href=https://eucp-project.github.io/atlas/about>atlas about page</a>,
     or the corresponding <a
-    href="https://eucp-project.github.io/storyboards/atlas/1_intro">storyboard</a>.
+    href=https://eucp-project.github.io/storyboards/atlas/1_intro>storyboard</a>.
     </p><p>&nbsp;</p> <p><strong>Preprocessed data of Atlas in
     EUCP-WP2</strong></p> <p>We provide some notebooks that check the
     original/raw data, fix/add the metadata using <a
-    href="https://cfconventions.org/Data/cf-conventions/cf-conventions-1.9/cf-conventions.html">CF-conventions</a>
+    href=https://cfconventions.org/Data/cf-conventions/cf-conventions-1.9/cf-conventions.html>CF-conventions</a>
     and save data in a NetCDF format. See <a
-    href="https://github.com/eucp-project/atlas/blob/main/python/README.md">https://github.com/eucp-project/atlas/blob/main/python/README.md</a>.</p>
+    href=https://github.com/eucp-project/atlas/blob/main/python/README.md>https://github.com/eucp-project/atlas/blob/main/python/README.md</a>.</p>
     <p>For two of the methods, REA and ClimWIP, pre-calculated weights have
     also been included. Note that these weights are only valid in the context
     of this specific model ensemble. Therefore, the original (pre-processed)
@@ -72,7 +72,7 @@ abstract: >-
     names</strong></p><p>output_file_name
     = <code>prefix_activity_institution-id_source_method_sub-method_cmor-var</code></p><p>example:
     atlas_EUCP_CNRM_CMIP6_KCC_cons_tas.nc</p><p><strong>Reference</strong>:</p><p><a
-    href=\"https://eucp-project.github.io/atlas/about\">https://eucp-project.github.io/atlas/about</a></p>
+    href=https://eucp-project.github.io/atlas/about>https://eucp-project.github.io/atlas/about</a></p>
 type: dataset
 authors:
   - affiliation: Netherlands eScience Cente
