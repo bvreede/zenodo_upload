@@ -1,16 +1,27 @@
-ADDITIONAL_TEXT
+{
+  "communities": [
+    {
+      "identifier": "ecfunded"
+    },
+    {
+      "identifier": "zenodo"
+    }
+  ],
   "grants": [
     {
-        "id": "10.13039/501100000780::776613"
+      "id": "10.13039/501100000780::776613"
     }
   ],
   "notes": "<p>Changelog:</p><p>v. 1.0.4: </p><p>Weights have been added for ClimWIP and REA</p><p>v. 1.0.5:</p><p>Hidden files were removed and the ZIP folder was cleaned up.</p><p>v. 1.0.7:</p><p>Files atlas_EUCP_UKMO_CMIP6_UKCP_cons_pr.nc and atlas_EUCP_UKMO_CMIP6_UKCP_uncons_pr.nc were updated.</p><p>v. 1.0.9:</p><p>Files atlas_EUCP_UKMO_CMIP6_UKCP_cons_pr.nc and atlas_EUCP_UKMO_CMIP6_UKCP_uncons_pr.nc were updated.</p><p>v. 1.0.10</p><p>The old zipfile for v 1.0.8 (preprocessed_20220217.zip) was removed.</p><p>v. 1.0.11 </p><p>atlas_EUCP_UEdin_CMIP6_ASK_cons_tas.nc and atlas_EUCP_UEdin_CMIP6_ASK_uncons_tas.nc were updated</p><p>v. 1.0.12</p><p>The old zipfile for v 1.0.11 (preprocessed_20220222.zip) was removed, and the zipfile was renamed.",
-  "communities": [
-  {
-      "identifier": "ecfunded"
-  },
-  {
-      "identifier": "zenodo"
-  }
-]
+  "references": [
+    "ahoy reference 1!"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.5645153",
+      "relation": "isCitedBy",
+      "scheme": "doi"
+    }
+  ],
+  "upload_type": "dataset"
 }
