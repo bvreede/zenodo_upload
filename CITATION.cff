@@ -1,0 +1,162 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Pre-processed data of atlas in EUCP-WP2
+message: >-
+    Please cite this dataset using the following metadata
+abstract: >-
+    Outputs from the probabilistic projection methods developed or assessed in
+    the European Climate Projection system (EUCP) Horizon2020 project. The data
+    can be previewed through our <a
+    href=\"https://eucp-project.github.io/atlas/\">interactive atlas</a>.</p>
+    <p>For more information, see the <a
+    href=\"https://eucp-project.github.io/atlas/about\">atlas about page</a>,
+    or the corresponding <a
+    href=\"https://eucp-project.github.io/storyboards/atlas/1_intro\">storyboard</a>.
+    </p><p>&nbsp;</p> <p><strong>Preprocessed data of Atlas in
+    EUCP-WP2</strong></p> <p>We provide some notebooks that check the
+    original/raw data, fix/add the metadata using <a
+    href=\"https://cfconventions.org/Data/cf-conventions/cf-conventions-1.9/cf-conventions.html\">CF-conventions</a>
+    and save data in a NetCDF format. See <a
+    href=\"https://github.com/eucp-project/atlas/blob/main/python/README.md\">https://github.com/eucp-project/atlas/blob/main/python/README.md</a>.</p>
+    <p>For two of the methods, REA and ClimWIP, pre-calculated weights have
+    also been included. Note that these weights are only valid in the context
+    of this specific model ensemble. Therefore, the original (pre-processed)
+    model data is published together with the weights.</p> <p>The pre-processed
+    data follows the following
+    standards:</p><p><strong>coordinates</strong></p>
+    <ul><li>climatology_bounds (climatology_bounds) datetime64[ns]
+    [&#39;2050-06-01&#39;, &#39;2050-09-01&#39;, &#39;2050-12-01&#39;,
+    &#39;2051-03-01&#39;]</li> <li>time (time) (datetime64[ns]) [2050-07-16
+    2051-01-16] # &quot;JJA&quot;, &quot;DJF&quot;</li> <li>latitude (lat)
+    (float64) [30, ..., 75]</li><li>longitude (lon) (float64) [-10, ...,
+    40]</li><li>percentile (percentile) (int64) [10, 25, 50, 75,
+    90]</li></ul><p><strong>variables</strong></p><ul><li>tas (time, latitude,
+    longitude, percentile) (float64)</li><li>pr (time, latitude, longitude,
+    percentile) (float64)</li></ul><p><strong>attributes</strong></p><p>The
+    attributes of variables and coordinates are defined
+    as:</p><ul><li>&quot;tas&quot;: {<br>&quot;description&quot;: &quot;Change
+    in Air Temperature&quot;,<br>&quot;standard_name&quot;: &quot;Change in Air
+    Temperature&quot;,<br>&quot;long_name&quot;: &quot;Change in Near-Surface
+    Air Temperature&quot;,<br>&quot;units&quot;:
+    &quot;K&quot;,<br>&quot;cell_methods&quot;: &quot;time: mean changes over
+    20 years 2041-2060 vs 1995-2014&quot;,<br>},</li><li>&quot;pr&quot;:
+    {<br>&quot;description&quot;: &quot;Relative
+    precipitation&quot;,<br>&quot;standard_name&quot;: &quot;Relative
+    precipitation&quot;,<br>&quot;long_name&quot;: &quot;Relative
+    precipitation&quot;,<br>&quot;units&quot;:
+    &quot;%&quot;,<br>&quot;cell_methods&quot;: &quot;time: mean changes over
+    20 years 2041-2060 vs 1995-2014&quot;,<br>},</li><li>&quot;latitude&quot;:
+    {&quot;units&quot;: &quot;degrees_north&quot;, &quot;long_name&quot;:
+    &quot;latitude&quot;, &quot;axis&quot;:
+    &quot;Y&quot;},</li><li>&quot;longitude&quot;: {&quot;units&quot;:
+    &quot;degrees_east&quot;, &quot;long_name&quot;: &quot;longitude&quot;,
+    &quot;axis&quot;: &quot;X&quot;},</li><li>&quot;time&quot;:
+    {<br>&quot;climatology&quot;:
+    &quot;climatology_bounds&quot;,<br>&quot;long_name&quot;:
+    &quot;time&quot;,<br>&quot;axis&quot;:
+    &quot;T&quot;,<br>&quot;climatology_bounds&quot;: [&quot;2050-6-1&quot;,
+    &quot;2050-9-1&quot;, &quot;2050-12-1&quot;,
+    &quot;2051-3-1&quot;],<br>&quot;description&quot;: &quot;mean changes over
+    20 years 2041-2060 vs 1995-2014. The mid point 2050 is chosen as the
+    representative time.&quot;,<br>},</li><li>&quot;percentile&quot;:
+    {&quot;units&quot;: &quot;%&quot;, &quot;long_name&quot;:
+    &quot;percentile&quot;, &quot;axis&quot;: &quot;Z&quot;},</li></ul><p>The
+    attributes of the data is defined as:</p><ul><li>&quot;description&quot;:
+    &quot;Contains
+    modified <code>institute</code> <code>method</code> data
+    used for Atlas in EUCP project.&quot;,</li><li>&quot;history&quot;:
+    &quot;original <code>institute</code> <code>method</code> data
+    files ...&quot;,</li></ul><p><strong>output file
+    names</strong></p><p>output_file_name
+    = <code>prefix_activity_institution-id_source_method_sub-method_cmor-var</code></p><p>example:
+    atlas_EUCP_CNRM_CMIP6_KCC_cons_tas.nc</p><p><strong>Reference</strong>:</p><p><a
+    href=\"https://eucp-project.github.io/atlas/about\">https://eucp-project.github.io/atlas/about</a></p>
+type: dataset
+authors:
+  - affiliation: Netherlands eScience Cente
+    given-names: Yang
+    family-names: Liu
+    orcid: 'https://orcid.org/0000-0002-1966-8460'
+  - affiliation: Netherlands eScience Center
+    given-names: Peter
+    family-names: Kalverla
+    orcid: 'https://orcid.org/0000-0002-5025-7862'
+  - affiliation: Netherlands eScience Center
+    given-names: Fakhereh
+    family-names: Alidoost
+    orcid: 'https://orcid.org/0000-0001-8407-6472'
+  - affiliation: Netherlands eScience Center
+    given-names: Stefan
+    family-names: Verhoeven
+    orcid: 'https://orcid.org/0000-0002-5821-2060'
+  - affiliation: Netherlands eScience Center
+    given-names: Barbara
+    family-names: Vreede
+    orcid: 'https://orcid.org/0000-0002-5023-4601'
+  - affiliation: UK Met Office
+    given-names: Ben
+    family-names: Booth
+    orcid: 'https://orcid.org/0000-0002-0715-2141'
+  - affiliation: >-
+      The Abdus Salam International Centre for
+      Theoretical Physics, Trieste, Italy
+    given-names: Erika
+    family-names: Coppola
+    orcid: 'https://orcid.org/0000-0001-6944-5815'
+  - affiliation: >-
+      The Abdus Salam International Centre for
+      Theoretical Physics, Trieste, Italy; Instituto
+      Nazionale di Oceanografia e di Geofisica
+      Sperimentale, Trieste, Italy
+    given-names: Rita
+    family-names: Nogherotto
+    orcid: 'https://orcid.org/0000-0003-1718-542X'
+  - affiliation: ETH Zurich
+    given-names: Lukas
+    family-names: Brunner
+    orcid: 'https://orcid.org/0000-0001-5760-4524'
+  - affiliation: UK Met Office
+    given-names: Glen
+    family-names: Harris
+    orcid: 'https://orcid.org/0000-0001-9259-7964'
+  - affiliation: Centre National de Recherches Météorologiques
+    given-names: Said
+    family-names: Qasmi
+    orcid: 'https://orcid.org/0000-0002-1825-3896'
+  - affiliation: University of Edinburgh
+    given-names: Andrew
+    family-names: Ballinger
+    orcid: 'https://orcid.org/0000-0003-3704-1976'
+  - affiliation: University of Edinburgh
+    given-names: Gabriele
+    family-names: Hegerl
+    orcid: 'https://orcid.org/0000-0002-4159-1295'
+  - affiliation: UK Met Office
+    given-names: Carol
+    family-names: McSweeney
+    orcid: 'https://orcid.org/0000-0001-8898-2093'
+  - affiliation: Reading University
+    given-names: Cristopher
+    family-names: O'Reilly
+    orcid: 'https://orcid.org/0000-0002-8630-1650'
+  - affiliation: UK Met Office
+    given-names: Tamzin
+    family-names: Palmer
+    orcid: 'https://orcid.org/0000-0002-8889-5595'
+  - affiliation: Centre National de Recherches Météorologiques
+    given-names: Aurélien
+    family-names: Ribes
+    orcid: 'https://orcid.org/0000-0001-5102-7885'
+  - affiliation: Royal Netherlands Meteorological Institute (KNMI)
+    given-names: Hylke
+    family-names: de Vries
+    orcid: 'https://orcid.org/0000-0002-6124-1102'
+license: CC-BY-4.0
+keywords:
+  - climate
+  - EUCP
+version: 1.0.12
+date-released: '2022-03-09'
+
