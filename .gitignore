@@ -3,3 +3,5 @@
 .DS_Store
 
 .zenodo.json
+.zenodo.base.json
+
